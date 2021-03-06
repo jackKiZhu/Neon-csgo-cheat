@@ -259,7 +259,7 @@ CCSWeaponInfo_t* C_BaseWeapon::GetWpnData()
 {
 	static auto fnGetWpnData
 		= reinterpret_cast<CCSWeaponInfo_t * (__thiscall*)(void*)>(
-			U::FindPattern("client_panorama.dll","zhopsd", "55 8B EC 81 EC ? ? ? ? 53 8B D9 56 57 8D 8B ? ? ? ? 85 C9 75 04 33 FF EB 2F")
+			U::FindPattern("client.dll","zhopsd", "55 8B EC 81 EC ? ? ? ? 53 8B D9 56 57 8D 8B ? ? ? ? 85 C9 75 04 33 FF EB 2F")
 			);
 	return fnGetWpnData(this);
 
@@ -267,7 +267,7 @@ CCSWeaponInfo_t* C_BaseWeapon::GetWpnData()
 
 CBaseAnimState* C_BasePlayer::GetAnimState()
 {
-	static DWORD animstateoffset = U::FindPattern("client_panorama.dll", "zhopsd", "8B 8E ? ? ? ? F3 0F 10 48 04 E8 ? ? ? ? E9") + 0x2;
+	static DWORD animstateoffset = U::FindPattern("client.dll", "zhopsd", "8B 8E ? ? ? ? F3 0F 10 48 04 E8 ? ? ? ? E9") + 0x2;
 	return *(CBaseAnimState**)((DWORD)this + *(DWORD*)animstateoffset);
 }
 

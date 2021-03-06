@@ -1020,8 +1020,8 @@ void __fastcall hkReadPacketEntities(void* pClientState, void* pEDX, void* pEntI
 }
 
 void __stdcall hkSuppressLists(int a2, bool a3) {
-//	static auto OnRenderStart_Return = (std::uint8_t*)U::FindPattern(("client_panorama.dll"), "OnRenderStart_Return","FF 50 40 8B 1D ? ? ? ?") + 0x3;
-	static auto FrameNetUpdateEnd_Return = (std::uint8_t*)U::FindPattern(("client_panorama.dll"), "FrameNetUpdateEnd_Return", "5F 5E 5D C2 04 00 83 3D ? ? ? ? ?");
+//	static auto OnRenderStart_Return = (std::uint8_t*)U::FindPattern(("client.dll"), "OnRenderStart_Return","FF 50 40 8B 1D ? ? ? ?") + 0x3;
+	static auto FrameNetUpdateEnd_Return = (std::uint8_t*)U::FindPattern(("client.dll"), "FrameNetUpdateEnd_Return", "5F 5E 5D C2 04 00 83 3D ? ? ? ? ?");
 
 	auto pLocalPlayer = C_BasePlayer::LocalPlayer();
 

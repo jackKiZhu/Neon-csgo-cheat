@@ -15,7 +15,7 @@
 
 #define STEAM_INF ("ClientVersion=666\nServerVersion=666\nPatchVersion=1.36.3.6\nProductName=csgo\nappID=730\nSourceRevision=4521895\nVersionDate=May 21 2018\nVersionTime=13:06:04\n")
 
-#define OFFSET_CLIENT ((DWORD)GetModuleHandle(/*client_panorama.dll*/XorStr<0xDC,11,0x927FEC24>("\xBF\xB1\xB7\xBA\x8E\x95\xCC\x87\x88\x89"+0x927FEC24).s))
+#define OFFSET_CLIENT ((DWORD)GetModuleHandle(/*client.dll*/XorStr<0xDC,11,0x927FEC24>("\xBF\xB1\xB7\xBA\x8E\x95\xCC\x87\x88\x89"+0x927FEC24).s))
 #define OFFSET_ENGINE ((DWORD)GetModuleHandle(/*engine.dll*/XorStr<0xD7,11,0x9BA5E618>("\xB2\xB6\xBE\xB3\xB5\xB9\xF3\xBA\xB3\x8C"+0x9BA5E618).s))
 #define OFFSET_DIRECTX ((DWORD)GetModuleHandle(/*shaderapidx9.dll*/XorStr<0xB5,17,0x9FFBB2AE>("\xC6\xDE\xD6\xDC\xDC\xC8\xDA\xCC\xD4\xDA\xC7\xF9\xEF\xA6\xAF\xA8"+0x9FFBB2AE).s))
 #define OFFSET_GOR ((DWORD)GetModuleHandle(/*gameoverlayrenderer.dll*/XorStr<0xA6,24,0x24541D6F>("\xC1\xC6\xC5\xCC\xC5\xDD\xC9\xDF\xC2\xCE\xC9\xC3\xD7\xDD\xD0\xD0\xC4\xD2\xCA\x97\xDE\xD7\xD0"+0x24541D6F).s))

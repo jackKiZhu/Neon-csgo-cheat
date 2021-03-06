@@ -7,7 +7,7 @@ DWORD ClientAdr;
 
 
 //float GetGameFps() {
-//	DWORD NetGraphPanel = **(DWORD**)((DWORD)(U::FindPattern("client_panorama.dll", "NetGraphPanelThis", "C7 05 ? ? ? ? ? ? ? ? C7 06 ? ? ? ? 8B 8E ? ? ? ?") + 0x2));
+//	DWORD NetGraphPanel = **(DWORD**)((DWORD)(U::FindPattern("client.dll", "NetGraphPanelThis", "C7 05 ? ? ? ? ? ? ? ? C7 06 ? ? ? ? 8B 8E ? ? ? ?") + 0x2));
 //
 //	
 //	float framerate = *(float*)(NetGraphPanel + 0x131B8);
@@ -142,7 +142,7 @@ DWORD ClientAdr;
 //
 //	if (msg == 9177)
 //	{
-//		static auto SetLocalPlayerReadyFn = reinterpret_cast<bool(__stdcall*)(const char*)>(U::FindPatternWithMask("client_panorama.dll", (PBYTE)"\x55\x8B\xEC\x83\xE4\xF8\x8B\x4D\x08\xBA\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x85\xC0\x75\x12", "xxxxxxxxxx????x????xxxx"));
+//		static auto SetLocalPlayerReadyFn = reinterpret_cast<bool(__stdcall*)(const char*)>(U::FindPatternWithMask("client.dll", (PBYTE)"\x55\x8B\xEC\x83\xE4\xF8\x8B\x4D\x08\xBA\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x85\xC0\x75\x12", "xxxxxxxxxx????x????xxxx"));
 //		if (SetLocalPlayerReadyFn)
 //			SetLocalPlayerReadyFn("");
 //	}
@@ -176,7 +176,7 @@ bool __fastcall Hooked_GetBool( ICvar* pConVar, void* edx ) {
 	if( !oGetBool )
 		return FALSE;
 
-	static DWORD CAM_Think = U::FindPattern( "client_panorama.dll", "cam think", "85 C0 75 30 38 86" );
+	static DWORD CAM_Think = U::FindPattern( "client.dll", "cam think", "85 C0 75 30 38 86" );
 
 	if( CAM_Think ) {
 		if( Options::Visuals::Misc::ThirdPerson && ( DWORD )_ReturnAddress( ) == CAM_Think ) {
@@ -516,7 +516,7 @@ return oFindMdl(ecx, szModel);
 //	//	if (g_pEngine->IsInGame()) return;
 //
 //	//	typedef bool(__stdcall* __SetLocalPlayerReadyFn)(const char*);
-//	//	static __SetLocalPlayerReadyFn SetLocalPlayerReadyFn = (U::FindPattern("client_panorama.dll","neon_zaebal" ,"55 8B EC 83 E4 F8 8B 4D 08 BA ? ? ? ? E8 ? ? ? ? 85 C0 75 12"));
+//	//	static __SetLocalPlayerReadyFn SetLocalPlayerReadyFn = (U::FindPattern("client.dll","neon_zaebal" ,"55 8B EC 83 E4 F8 8B 4D 08 BA ? ? ? ? E8 ? ? ? ? 85 C0 75 12"));
 //	//	HWND Hwnd;
 //	//	if ((Hwnd = FindWindow(NULL, "Counter-Strike: Global Offensive")) && GetForegroundWindow() == Hwnd) // Gets the csgo window and checks if the active window is csgos window // EDIT: Changed from Valve001 to Counter-Strike: Global Offensive.
 //	//	{

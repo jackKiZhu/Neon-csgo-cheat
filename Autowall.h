@@ -130,7 +130,7 @@ namespace Autowall
 	bool TraceToExit(Vector3& end, trace_t& tr, float x, float y, float z, float x2, float y2, float z2, trace_t* trace)
 	{
 		typedef bool(__fastcall* TraceToExitFn)(Vector3&, trace_t&, float, float, float, float, float, float, trace_t*);
-		static TraceToExitFn TraceToExit = (TraceToExitFn)U::FindPattern("client_panorama.dll","TraceToExit", "55 8B EC 83 EC 30 F3 0F 10 75");
+		static TraceToExitFn TraceToExit = (TraceToExitFn)U::FindPattern("client.dll","TraceToExit", "55 8B EC 83 EC 30 F3 0F 10 75");
 
 		if (!TraceToExit)
 		{

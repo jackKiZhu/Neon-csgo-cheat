@@ -1082,7 +1082,7 @@ namespace CVisuals
 		for( int i = 0; i < 13; i++ ) {
 			typedef int( __thiscall* GetSequenceActivityFn )( C_BasePlayer*, int );
 			typedef AnimationLayer*( __thiscall* GetAnimOverlayFn )( C_BasePlayer*, int, bool );
-			static auto GetSequenceActivity = ( GetSequenceActivityFn )U::FindPattern( "client_panorama.dll", "GetSequenceActivity", "55 8B EC 53 8B 5D 08 56 8B F1 83" );
+			static auto GetSequenceActivity = ( GetSequenceActivityFn )U::FindPattern( "client.dll", "GetSequenceActivity", "55 8B EC 53 8B 5D 08 56 8B F1 83" );
 			auto current_layer = ( *( AnimationLayer** )( ( DWORD )pLocalEntity + 0x2980 ) )[i];
 			int sequence_activity = GetSequenceActivity( pLocalEntity, current_layer.m_nSequence );
 

@@ -93,7 +93,7 @@ IDirect3DTexture9 * getTexture(int gun, int index) {
 }
 
 int GetLocalPing( ) {
-	static DWORD PTAB = *( DWORD* )( U::FindPattern( "client_panorama.dll", "PRES", "8B 3D ? ? ? ? 85 FF 0F 84 ? ? ? ? 81 C7" ) );
+	static DWORD PTAB = *( DWORD* )( U::FindPattern( "client.dll", "PRES", "8B 3D ? ? ? ? 85 FF 0F 84 ? ? ? ? 81 C7" ) );
 	static auto local_pl = C_BasePlayer::LocalPlayer( );
 	if( g_pEngine->IsConnected( ) )
 		return *( int* )( PTAB + 0x0B28 + ( int )local_pl->GetIndex( ) * 4 );

@@ -11,7 +11,7 @@ int g_iScreenCenterX, g_iScreenCenterY;
 CVMTHookManager* d3d_hook = nullptr;
 
 //void SetGameFps( ) {
-//	static DWORD NetGraphPanel = **( DWORD** )( ( DWORD )( U::FindPattern( "client_panorama.dll", "NetGraphPanelThis", "C7 05 ? ? ? ? ? ? ? ? C7 06 ? ? ? ? 8B 8E ? ? ? ?" ) + 0x2 ) );
+//	static DWORD NetGraphPanel = **( DWORD** )( ( DWORD )( U::FindPattern( "client.dll", "NetGraphPanelThis", "C7 05 ? ? ? ? ? ? ? ? C7 06 ? ? ? ? 8B 8E ? ? ? ?" ) + 0x2 ) );
 //
 //	//	printf("client - 0x%X\nNetGraphPanel - 0x%X\n", ClientAdr, NetGraphPanel);
 //	float& framerate = *( float* )( NetGraphPanel + 0x131B8 );

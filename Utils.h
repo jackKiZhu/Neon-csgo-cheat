@@ -283,7 +283,7 @@ namespace U
 	void RevealRanks() {
 		using ServerRankRevealAll = char(__cdecl*)(int*);
 
-		static DWORD fnServerRankRevealAll = FindPattern(("client_panorama.dll"), "shr2", "55 8B EC 8B 0D ? ? ? ? 85 C9 75 ? A1 ? ? ? ? 68 ? ? ? ? 8B 08 8B 01 FF 50 ? 85 C0 74 ? 8B C8 E8 ? ? ? ? 8B C8 EB ? 33 C9 89 0D ? ? ? ? 8B 45 ? FF 70 ? E8 ? ? ? ? B0 ? 5D");
+		static DWORD fnServerRankRevealAll = FindPattern(("client.dll"), "shr2", "55 8B EC 8B 0D ? ? ? ? 85 C9 75 ? A1 ? ? ? ? 68 ? ? ? ? 8B 08 8B 01 FF 50 ? 85 C0 74 ? 8B C8 E8 ? ? ? ? 8B C8 EB ? 33 C9 89 0D ? ? ? ? 8B 45 ? FF 70 ? E8 ? ? ? ? B0 ? 5D");
 
 		if (fnServerRankRevealAll) {
 			int v[3] = { 0,0,0 };
@@ -299,8 +299,8 @@ namespace U
 	};
 	template<class T>
 	static T* Find_Hud_Element(const char* name) {
-		static auto pThis = *reinterpret_cast<DWORD**>(FindPattern("client_panorama.dll", "pThis", "B9 ? ? ? ? E8 ? ? ? ? 8B 5D 08") + 1);
-		static auto find_hud_element = reinterpret_cast<DWORD(__thiscall*)(void*, const char*)>(FindPattern("client_panorama.dll", "Find Hud Element", "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"));
+		static auto pThis = *reinterpret_cast<DWORD**>(FindPattern("client.dll", "pThis", "B9 ? ? ? ? E8 ? ? ? ? 8B 5D 08") + 1);
+		static auto find_hud_element = reinterpret_cast<DWORD(__thiscall*)(void*, const char*)>(FindPattern("client.dll", "Find Hud Element", "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"));
 		return (T*)find_hud_element(pThis, name);
 	}
 	void FullUpdate() {
@@ -308,7 +308,7 @@ namespace U
 		if (g_pEngine->IsInGame()) {
 			updatecompleted = 0;
 			Sleep(50);
-			static auto clear_fn = reinterpret_cast<int(__thiscall*)(void*, int)>(FindPattern(("client_panorama.dll"), "clear_fn", "55 8B EC 51 53 56 8B 75 08 8B D9 57 6B FE 2C 89 5D FC"));
+			static auto clear_fn = reinterpret_cast<int(__thiscall*)(void*, int)>(FindPattern(("client.dll"), "clear_fn", "55 8B EC 51 53 56 8B 75 08 8B D9 57 6B FE 2C 89 5D FC"));
 			auto dwHudWeaponSelection = Find_Hud_Element<uintptr_t*>("CCSGO_HudWeaponSelection");
 			if (dwHudWeaponSelection && clear_fn) {
 				auto pHudWeapons = (int*)(uintptr_t(dwHudWeaponSelection) - 0x20);
@@ -425,7 +425,7 @@ namespace U
 	void InitKeyValues(KeyValues* pKeyValues, const char* szName) {
 		static DWORD dwOffset;
 		if (!dwOffset)
-			dwOffset = U::FindPattern("client_panorama.dll", "keyvalues", "8B 0E 33 4D FC 81 E1 ? ? ? ? 31 0E 88 46 03 C1 F8 08 66 89 46 12 8B C6") - 0x45;
+			dwOffset = U::FindPattern("client.dll", "keyvalues", "8B 0E 33 4D FC 81 E1 ? ? ? ? 31 0E 88 46 03 C1 F8 08 66 89 46 12 8B C6") - 0x45;
 
 		typedef void(__thiscall* InitKeyValuesFn)(void*, const char*);
 		InitKeyValuesFn InitKeyValues = (InitKeyValuesFn)(dwOffset);
@@ -434,7 +434,7 @@ namespace U
 
 	void LoadFromBuffer(KeyValues* pKeyValues, const char* szResourceName, const char* szBuffer, void* pFileSystem = nullptr, const char* szPathID = NULL, void* pfnEvaluateSymbolProc = nullptr) {
 		static DWORD dwOffset;
-		if (!dwOffset) dwOffset = U::FindPattern("client_panorama.dll", "buffer", "55 8B EC 83 E4 F8 83 EC 34 53 8B 5D 0C 89 4C 24 04");
+		if (!dwOffset) dwOffset = U::FindPattern("client.dll", "buffer", "55 8B EC 83 E4 F8 83 EC 34 53 8B 5D 0C 89 4C 24 04");
 
 		//OFFSET_LOADFROMBUFFER;
 
@@ -1331,7 +1331,7 @@ namespace U
 			return LineGoesThroughSmokeEx(vecPos1.x, vecPos1.y, vecPos1.z, vecPos2.x, vecPos2.y, vecPos2.z, 1);
 			*/
 
-		static auto LineGoesThroughSmokeFn = (bool(*)(Vector3, Vector3))U::FindPattern("client_panorama.dll", "Line goes", "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0");
+		static auto LineGoesThroughSmokeFn = (bool(*)(Vector3, Vector3))U::FindPattern("client.dll", "Line goes", "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0");
 		return LineGoesThroughSmokeFn(vecPos1, vecPos2);
 	}
 

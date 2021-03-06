@@ -23,7 +23,7 @@ void __fastcall Hooked_SceneEnd(void* thisptr, void* edx) {
 
 	oSceneEnd(thisptr);
 
-	static auto m_pGlowManager = *reinterpret_cast<CGlowObjectManager * *>(U::FindPattern("client_panorama.dll", "Glowmanager", "0F 11 05 ? ? ? ? 83 C8 01") + 3);
+	static auto m_pGlowManager = *reinterpret_cast<CGlowObjectManager * *>(U::FindPattern("client.dll", "Glowmanager", "0F 11 05 ? ? ? ? 83 C8 01") + 3);
 
 	if (Options::Visuals::Misc::glow_alpha > 0 && pLocal && g_pEngine->IsConnected() && g_pEngine->IsInGame() && m_pGlowManager)
 	{

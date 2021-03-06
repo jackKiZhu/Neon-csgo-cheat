@@ -21,7 +21,7 @@ namespace Prediction
 		if (!bInit)
 		{
 			if (m_nPredictionRandomSeed == nullptr)
-				m_nPredictionRandomSeed = *(int**)(U::FindPattern("client_panorama.dll","prediction" ,"8B 0D ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 83 C4 04") + 2);
+				m_nPredictionRandomSeed = *(int**)(U::FindPattern("client.dll","prediction" ,"8B 0D ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 83 C4 04") + 2);
 			bInit = true;
 		}
 

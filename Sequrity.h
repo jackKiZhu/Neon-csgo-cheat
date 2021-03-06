@@ -170,7 +170,7 @@ namespace Sequrity
 		//if (szText != STEAM_INF)
 		//	ExitGame();
 
-		// TODO: modules check (client_panorama.dll/engine.dll)
+		// TODO: modules check (client.dll/engine.dll)
 		//		 checking for crc/md5
 		
 	}

@@ -354,8 +354,8 @@ namespace CRagebot
 
 			typedef int(__thiscall* GetSequenceActivityFn)(C_BasePlayer*, int);
 			typedef AnimationLayer*(__thiscall* GetAnimOverlayFn)(C_BasePlayer*, int, bool);
-			static auto GetSequenceActivity = (GetSequenceActivityFn)U::FindPattern("client_panorama.dll", "GetSequenceActivity", "55 8B EC 83 7D 08 FF 56 8B F1 74");
-			//static auto GetAnimOverlay = (GetAnimOverlayFn)U::FindPattern("client_panorama.dll", "GetAnimOverlay", "55 8B EC 57 8B F9 8B 97 ? ? ? ? 85 D2");
+			static auto GetSequenceActivity = (GetSequenceActivityFn)U::FindPattern("client.dll", "GetSequenceActivity", "55 8B EC 83 7D 08 FF 56 8B F1 74");
+			//static auto GetAnimOverlay = (GetAnimOverlayFn)U::FindPattern("client.dll", "GetAnimOverlay", "55 8B EC 57 8B F9 8B 97 ? ? ? ? 85 D2");
 			//auto current_layer = *GetAnimOverlay(pBasePlayer, 3, 1);
 			auto current_layer = (*(AnimationLayer**)((DWORD)pBasePlayer + 0x2970))[3];
 			auto shooting_layer = (*(AnimationLayer**)((DWORD)pBasePlayer + 0x2970))[1];
