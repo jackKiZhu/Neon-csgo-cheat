@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="External\WinHttpClient\WinHttpClient.cpp">
+      <Filter>Hack\GUI\External\WinHttpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="_DllMain.cpp" />
+    <ClCompile Include="ValveParser.cpp">
+      <Filter>Hack\Other\Parsers\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui.cpp">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_draw.cpp">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\DX9\imgui_impl_dx9.cpp">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CHC.cpp">
+      <Filter>SDK\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="ICvar.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_impl_win32.cpp">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_widgets.cpp">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Lic\Web\INetWork.cpp">
+      <Filter>Lic\Web</Filter>
+    </ClCompile>
+    <ClCompile Include="Lic\Utilit\IUtilit.cpp">
+      <Filter>Lic\Utilit</Filter>
+    </ClCompile>
+    <ClCompile Include="Lic\License\IKey.cpp">
+      <Filter>Lic\License</Filter>
+    </ClCompile>
+    <ClCompile Include="Lic\License\ILicense.cpp">
+      <Filter>Lic\License</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{af342abc-b496-4a96-9735-58658a28e044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Interfaces">
+      <UniqueIdentifier>{eac431a1-64e3-4308-9327-958f2d2bc9bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Classes">
+      <UniqueIdentifier>{851b459c-685f-4632-b780-d95f12d0a62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Other">
+      <UniqueIdentifier>{f42086e7-f22a-4711-8857-5c3f45ce9591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack">
+      <UniqueIdentifier>{c1126518-908f-41bd-bdf6-dbc130425565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other">
+      <UniqueIdentifier>{5f55e85c-7696-49f2-9884-91d3e071b4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Hooks">
+      <UniqueIdentifier>{6a6b4c62-1456-4440-a9bc-c9d8df367116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Hook">
+      <UniqueIdentifier>{29f2d179-4aba-4698-9115-ecef257b817b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Helpers">
+      <UniqueIdentifier>{d88a7d3e-a415-4f5e-8548-955b45b75ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Config">
+      <UniqueIdentifier>{0c979046-4579-4ea5-921d-b08835ca4c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\XorStr">
+      <UniqueIdentifier>{37d97f7c-2ff2-416c-b431-74ef425991b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Hacks">
+      <UniqueIdentifier>{c3d7c7bd-d5e6-4e21-a595-a66308a4b533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Parsers">
+      <UniqueIdentifier>{add588e9-810b-4270-8f2d-874ae8eb02b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Parsers\NetVars">
+      <UniqueIdentifier>{5502f15a-5673-4cdd-bcd9-a893ea1301cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Parsers\Nav">
+      <UniqueIdentifier>{086e8576-d592-482e-a6f9-88cc5be2d664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\ImGUI">
+      <UniqueIdentifier>{3781e7e5-de59-4ded-bc5f-b04955d524a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\GUI">
+      <UniqueIdentifier>{0be8bd3f-5010-4c67-bd41-2d1437edfca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Rendering">
+      <UniqueIdentifier>{4a2384bf-cbe5-4719-8c66-f3a1d9a442c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Auth">
+      <UniqueIdentifier>{9a6a8d2d-36eb-45fd-8389-0641681baecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Security">
+      <UniqueIdentifier>{ade189b5-c8b4-472d-befb-d163b727dcfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Other\Parsers\Parser">
+      <UniqueIdentifier>{c1aa5c36-868e-4073-9f6e-3a32e8c251db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{d248a79d-fe61-4f65-b89b-3e0abbe5fca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Server">
+      <UniqueIdentifier>{ff903cd7-c455-4763-95c4-60cd8d0fbae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\GUI\External">
+      <UniqueIdentifier>{7cd9be77-3192-4ed4-80bb-6a26d413f414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\GUI\External\WinHttpClient">
+      <UniqueIdentifier>{d652f5b3-1a6e-4117-b6f0-60123380d997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\GUI\External\Rektware">
+      <UniqueIdentifier>{9581faad-6f14-44cf-a8cf-08cff0c0dd9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lic">
+      <UniqueIdentifier>{ea3af566-87ee-454f-a0d9-0b44582e8657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lic\License">
+      <UniqueIdentifier>{ea672be3-0f66-4210-847a-13b6b050697c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lic\Utilit">
+      <UniqueIdentifier>{a94608e5-5c0f-402c-b253-6dadf74d683c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lic\Web">
+      <UniqueIdentifier>{69fffc9b-47bb-4ff8-b4d9-1abd20ebe680}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="IBaseClientDLL.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientEntityList.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVEngineClient.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IEngineTrace.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="IVModelInfoClient.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVModelRender.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameEventManager.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVDebugOverlay.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IInputSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ICvar.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IAppSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CGlobalVars.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IMaterialSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyValues.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameMovement.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPrediction.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientMode.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ISoundClient.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IStudioRender.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Hack\Other\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="CVMTHookManager.h">
+      <Filter>Hack\Other\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvPropHook.h">
+      <Filter>Hack\Other\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Hack\Other\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr.h">
+      <Filter>Hack\Other\XorStr</Filter>
+    </ClInclude>
+    <ClInclude Include="strenc.h">
+      <Filter>Hack\Other\XorStr</Filter>
+    </ClInclude>
+    <ClInclude Include="Movement.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Legitbot.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Triggerbot.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Chams.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Knifebot.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowColor.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameStageNotify.h">
+      <Filter>Hack\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelper.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="VTFHook.h">
+      <Filter>Hack\Other\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="HitChance.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVars.h">
+      <Filter>Hack\Other\Parsers\NetVars</Filter>
+    </ClInclude>
+    <ClInclude Include="INav.h">
+      <Filter>Hack\Other\Parsers\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="nav_hidingspot.h">
+      <Filter>Hack\Other\Parsers\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="nav_ladder.h">
+      <Filter>Hack\Other\Parsers\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="nav_area.h">
+      <Filter>Hack\Other\Parsers\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="INavFile.h">
+      <Filter>Hack\Other\Parsers\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Walkbot.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Ragebot.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="CInput.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="FixMove.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Autowall.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IPhysicsSurfaceProps.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVPanel.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="INetChannelInfo.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolver.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Backtracking.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IMatSurface.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Knifebot.NEW.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="VFileSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering.h">
+      <Filter>Hack\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawManager.h">
+      <Filter>Hack\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="ILocalize.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ALFunc.h">
+      <Filter>_Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequrity.h">
+      <Filter>_Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Auth.h">
+      <Filter>_Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="External\WinHttpClient\WinHttpClient.h">
+      <Filter>Hack\GUI\External\WinHttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveParser.h">
+      <Filter>Hack\Other\Parsers\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Hack\Other\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="GrenadePrediction.h">
+      <Filter>Hack\Other\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GrenadeHelper.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="PredictionHelper.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5_PseudoRandom.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="TrueRadar.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="IVRenderView.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifySystem.h">
+      <Filter>Hack\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Rektware.h">
+      <Filter>Hack\GUI\External\Rektware</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="DebuggersCheck.h">
+      <Filter>_Security</Filter>
+    </ClInclude>
+    <ClInclude Include="ISteamClient.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="EventList.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbuf.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryChanger.h">
+      <Filter>Hack\Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="VMatrix.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvProxy.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="IMaterial.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientEntity.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CUtlVector.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CSteamID.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CMaterialReferences.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientClass.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationLayers.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseAnimating.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseAttributableItem.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayer.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseWeapon.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemDefinitionIndex.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityReplaces.h">
+      <Filter>_Security</Filter>
+    </ClInclude>
+    <ClInclude Include="CFireBullets.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CServer.h">
+      <Filter>Hack\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryReader.h">
+      <Filter>Hack\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryWriter.h">
+      <Filter>Hack\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="IVEngineServer.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imconfig.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui_internal.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\DX9\imgui_impl_dx9.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Hack\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetGraphPanel.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="INetMessage.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerResource.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CHC.h">
+      <Filter>SDK\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="PreDllMain.h" />
+    <ClInclude Include="ImGUI\imgui_impl_win32.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imstb_rectpack.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imstb_textedit.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imstb_truetype.h">
+      <Filter>Hack\Other\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\Web\INetWork.h">
+      <Filter>Lic\Web</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\Utilit\IUtilit.h">
+      <Filter>Lic\Utilit</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\Utilit\Xor.h">
+      <Filter>Lic\Utilit</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\License\IKey.h">
+      <Filter>Lic\License</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\License\ILicense.h">
+      <Filter>Lic\License</Filter>
+    </ClInclude>
+    <ClInclude Include="Lic\License\structs.h">
+      <Filter>Lic\License</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteArrays\Flags.h" />
+    <ClInclude Include="ByteArrays\glow_bytez.h" />
+    <ClInclude Include="ByteArrays\icons.h" />
+    <ClInclude Include="ByteArrays\modelka.h" />
+    <ClInclude Include="ByteArrays\ararry.h" />
+    <ClInclude Include="ByteArrays\newmodel.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="configimport.h" />
+    <ClInclude Include="kekekek.h" />
+    <ClInclude Include="Protection.h" />
+    <ClInclude Include="pbwrap.hpp">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtoParse.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xorgen.html" />
+  </ItemGroup>
+</Project>

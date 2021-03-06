@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DEV|Win32">
+      <Configuration>DEV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DEV|x64">
+      <Configuration>DEV</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1F3894C1-D0E5-4EF4-884D-DAB98B5B8A25}</ProjectGuid>
+    <RootNamespace>Neon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Neon</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEV|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEV|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>I:\DSDK\Include;G:\программы\sdk\Include;$(ProjectDir)minidx9\Include;$(ProjectDir)Protobuf;C:\Program Files %28x86%29\LibCURL\include;$(ProjectDir)\SDKLauncher\Crypto\Include;$(ProjectDir)\SDKLauncher\libcurl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\программы\sdk\Lib\x86;$(ProjectDir)Protobuf;$(ProjectDir)minidx9\Lib\x86;$(ProjectDir)SDKLauncher\Crypto\Lib;$(ProjectDir)SDKLauncher\libcurl\lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>I:\DSDK\lazy_importer-master\include;C:\Users\шыш\Desktop\Новая папка\lazy_importer-master\include;$(ProjectDir)\minidx9\Include;$(ProjectDir)VMProtectSDK;$(ProjectDir)\Protobuf;$(ProjectDir)\SDKLauncher\libcurl\include;$(ProjectDir)\SDKLauncher\Crypto\Include;$(ProjectDir)\SDKLauncher\MiniHook\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>I:\Nick\заказы\NEON base\aquafff%2814.05%29\lazy_importer-master\include;C:\Users\шыш\Desktop\Новая папка\lazy_importer-master\include;$(ProjectDir)VMProtectSDK;$(ProjectDir)\minidx9\Lib\x86;$(ProjectDir)\SDKLauncher\libcurl\lib;$(ProjectDir)\SDKLauncher\Crypto\Lib;$(ProjectDir)\Protobuf;$(ProjectDir)\SDKLauncher\MiniHook\Lib;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Example</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">
+    <IncludePath>$(ProjectDir)\minidx9\Include;$(ProjectDir)\Protobuf;$(ProjectDir)\SDKLauncher\libcurl\include;$(ProjectDir)\SDKLauncher\Crypto\Include;$(ProjectDir)\SDKLauncher\MiniHook\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\minidx9\Lib\x86;$(ProjectDir)\SDKLauncher\libcurl\lib;$(ProjectDir)\SDKLauncher\Crypto\Lib;$(ProjectDir)\Protobuf;$(ProjectDir)\SDKLauncher\MiniHook\Lib;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>ExampleDll</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>123</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader />
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;DEVELOPMENT;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEV|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CHC.cpp" />
+    <ClCompile Include="ICvar.cpp" />
+    <ClCompile Include="ImGUI\DX9\imgui_impl_dx9.cpp" />
+    <ClCompile Include="ImGUI\imgui.cpp" />
+    <ClCompile Include="ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="ImGUI\imgui_impl_win32.cpp" />
+    <ClCompile Include="ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Lic\License\IKey.cpp" />
+    <ClCompile Include="Lic\License\ILicense.cpp" />
+    <ClCompile Include="Lic\Utilit\IUtilit.cpp" />
+    <ClCompile Include="Lic\Web\INetWork.cpp" />
+    <ClCompile Include="_DllMain.cpp" />
+    <ClCompile Include="External\WinHttpClient\WinHttpClient.cpp" />
+    <ClCompile Include="ValveParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ALFunc.h" />
+    <ClInclude Include="ByteArrays\ararry.h" />
+    <ClInclude Include="ByteArrays\Flags.h" />
+    <ClInclude Include="ByteArrays\glow_bytez.h" />
+    <ClInclude Include="ByteArrays\icons.h" />
+    <ClInclude Include="ByteArrays\modelka.h" />
+    <ClInclude Include="ByteArrays\newmodel.h" />
+    <ClInclude Include="CHC.h" />
+    <ClInclude Include="CNetGraphPanel.h" />
+    <ClInclude Include="configimport.h" />
+    <ClInclude Include="CPlayerResource.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="ImGUI\DX9\imgui_impl_dx9.h" />
+    <ClInclude Include="ImGUI\imconfig.h" />
+    <ClInclude Include="ImGUI\imgui.h" />
+    <ClInclude Include="ImGUI\imgui_impl_win32.h" />
+    <ClInclude Include="ImGUI\imgui_internal.h" />
+    <ClInclude Include="ImGUI\imstb_rectpack.h" />
+    <ClInclude Include="ImGUI\imstb_textedit.h" />
+    <ClInclude Include="ImGUI\imstb_truetype.h" />
+    <ClInclude Include="INetMessage.h" />
+    <ClInclude Include="kekekek.h" />
+    <ClInclude Include="Lic\License\IKey.h" />
+    <ClInclude Include="Lic\License\ILicense.h" />
+    <ClInclude Include="Lic\License\structs.h" />
+    <ClInclude Include="Lic\Utilit\IUtilit.h" />
+    <ClInclude Include="Lic\Utilit\Xor.h" />
+    <ClInclude Include="Lic\Web\INetWork.h" />
+    <ClInclude Include="pbwrap.hpp" />
+    <ClInclude Include="PreDllMain.h" />
+    <ClInclude Include="Protection.h" />
+    <ClInclude Include="AnimationLayers.h" />
+    <ClInclude Include="Auth.h" />
+    <ClInclude Include="Autowall.h" />
+    <ClInclude Include="Backtracking.h" />
+    <ClInclude Include="BinaryReader.h" />
+    <ClInclude Include="BinaryWriter.h" />
+    <ClInclude Include="bitbuf.h" />
+    <ClInclude Include="CFireBullets.h" />
+    <ClInclude Include="CItemDefinitionIndex.h" />
+    <ClInclude Include="CSteamID.h" />
+    <ClInclude Include="CServer.h" />
+    <ClInclude Include="DebuggersCheck.h" />
+    <ClInclude Include="EventList.h" />
+    <ClInclude Include="InventoryChanger.h" />
+    <ClInclude Include="ISteamClient.h" />
+    <ClInclude Include="IVEngineServer.h" />
+    <ClInclude Include="IVRenderView.h" />
+    <ClInclude Include="ProtoParse.h" />
+    <ClInclude Include="Rektware.h" />
+    <ClInclude Include="Resources.h" />
+    <ClInclude Include="SecurityReplaces.h" />
+    <ClInclude Include="TrueRadar.h" />
+    <ClInclude Include="CBaseAnimating.h" />
+    <ClInclude Include="CBaseAttributableItem.h" />
+    <ClInclude Include="CBaseWeapon.h" />
+    <ClInclude Include="CGlobalVars.h" />
+    <ClInclude Include="Chams.h" />
+    <ClInclude Include="CInput.h" />
+    <ClInclude Include="ClientClass.h" />
+    <ClInclude Include="CMaterialReferences.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="CBasePlayer.h" />
+    <ClInclude Include="CUtlVector.h" />
+    <ClInclude Include="DrawManager.h" />
+    <ClInclude Include="External\WinHttpClient\WinHttpClient.h" />
+    <ClInclude Include="FixMove.h" />
+    <ClInclude Include="FrameStageNotify.h" />
+    <ClInclude Include="GrenadeHelper.h" />
+    <ClInclude Include="GrenadePrediction.h" />
+    <ClInclude Include="HitChance.h" />
+    <ClInclude Include="ILocalize.h" />
+    <ClInclude Include="IMatSurface.h" />
+    <ClInclude Include="INav.h" />
+    <ClInclude Include="INavFile.h" />
+    <ClInclude Include="INetChannelInfo.h" />
+    <ClInclude Include="IPhysicsSurfaceProps.h" />
+    <ClInclude Include="IVPanel.h" />
+    <ClInclude Include="Knifebot.h" />
+    <ClInclude Include="Knifebot.NEW.h" />
+    <ClInclude Include="Legitbot.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MD5_PseudoRandom.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Movement.h" />
+    <ClInclude Include="CVMTHookManager.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="EventListener.h" />
+    <ClInclude Include="IAppSystem.h" />
+    <ClInclude Include="IBaseClientDLL.h" />
+    <ClInclude Include="IClientEntity.h" />
+    <ClInclude Include="IClientEntityList.h" />
+    <ClInclude Include="IClientMode.h" />
+    <ClInclude Include="ICvar.h" />
+    <ClInclude Include="IEngineTrace.h" />
+    <ClInclude Include="IGameEventManager.h" />
+    <ClInclude Include="IGameMovement.h" />
+    <ClInclude Include="IInputSystem.h" />
+    <ClInclude Include="IMaterial.h" />
+    <ClInclude Include="IMaterialSystem.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="IPrediction.h" />
+    <ClInclude Include="ISoundClient.h" />
+    <ClInclude Include="IStudioRender.h" />
+    <ClInclude Include="IVDebugOverlay.h" />
+    <ClInclude Include="IVEngineClient.h" />
+    <ClInclude Include="IVModelInfoClient.h" />
+    <ClInclude Include="IVModelRender.h" />
+    <ClInclude Include="KeyValues.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="NotifySystem.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Ragebot.h" />
+    <ClInclude Include="Resolver.h" />
+    <ClInclude Include="Sequrity.h" />
+    <ClInclude Include="VFileSystem.h" />
+    <ClInclude Include="VMatrix.h" />
+    <ClInclude Include="nav_area.h" />
+    <ClInclude Include="nav_hidingspot.h" />
+    <ClInclude Include="nav_ladder.h" />
+    <ClInclude Include="NetVars.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="ValveParser.h" />
+    <ClInclude Include="PredictionHelper.h" />
+    <ClInclude Include="Proxy.h" />
+    <ClInclude Include="RainbowColor.h" />
+    <ClInclude Include="RecvPropHook.h" />
+    <ClInclude Include="Rendering.h" />
+    <ClInclude Include="strenc.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="RecvProxy.h" />
+    <ClInclude Include="SDK.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Triggerbot.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Visuals.h" />
+    <ClInclude Include="VTFHook.h" />
+    <ClInclude Include="Walkbot.h" />
+    <ClInclude Include="XorStr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xorgen.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
